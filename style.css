@@ -69,27 +69,24 @@ h2{
 }
 
 #tipos{
-  height: 60vh;
   background-color:rgb(114, 29, 114);
   padding: 50px 10px 50px 10px;
 }
 
 #ciclo{
-  height: 40vh;
   background-color: rgb(164, 67, 164);
   padding: 50px 10px 50px 10px;
 }
 
 #ajuda{
-  height: 90vh;
   background-color: rgb(196, 112, 196);
   padding: 50px 10px 50px 10px;
 }
 
 #contato{
   height: 100vh;
-  background-color: rgb(234, 168, 234);
- 
+  width: 100vw;
+  background-color: rgb(234, 168, 234); 
 }
 
 /*botão denuncie*/
