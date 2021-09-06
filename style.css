@@ -24,11 +24,52 @@ h1{
   
 }
 
-#dados{
-  text-align: right;
+#lei{
+  background-color: rgb(82, 17, 82);
+  padding: 50px 10px 50px 10px;
+}
+
+#tipos{
+  background-color:rgb(114, 29, 114);
+  padding: 50px 10px 50px 10px;
+}
+
+#ciclo{
+  background-color: rgb(164, 67, 164);
+  padding: 50px 10px 50px 10px;
+}
+
+#ajuda{
+  background-color: rgb(196, 112, 196);
+  padding: 50px 10px 50px 10px;
+}
+
+#contato{
+  height: 100vh;
+  background-color: rgb(234, 168, 234); 
+  color: black;
+  padding: 20px 10px 50px 10px;
+}
+
+footer{
+  padding: 10px; 
+  background-color: rgb(54, 11, 54);
+  text-align: center;
   color: white;
-  font-size: small;
-  padding-right: 25%;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer a:hover{
+  color: rgb(92, 180, 252);
+}
+
+footer ul li {
+  display: inline-block;  /* Coloca os itens de uma lista na horizontal */
+  padding: 0 12px;
+  border-right: 2px solid #ffffff;
 }
 
 h2{
@@ -61,32 +102,7 @@ h2{
 
 .texto1 h3{
   padding-top: 30px;
-}
-
-#lei{
-  background-color: rgb(82, 17, 82);
-  padding: 50px 10px 50px 10px;
-}
-
-#tipos{
-  background-color:rgb(114, 29, 114);
-  padding: 50px 10px 50px 10px;
-}
-
-#ciclo{
-  background-color: rgb(164, 67, 164);
-  padding: 50px 10px 50px 10px;
-}
-
-#ajuda{
-  background-color: rgb(196, 112, 196);
-  padding: 50px 10px 50px 10px;
-}
-
-#contato{
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(234, 168, 234); 
+  text-align: center;
 }
 
 /*botão denuncie*/
@@ -110,13 +126,14 @@ h2{
 }
 
 .denuncie:hover{
-  background-color: white;
+  background-color: pink;
 }
 
 .denuncie a:hover{
   color: black;
 }
 
+/* botão topo, só aparece em telas menores*/
 .topo{
   display: block;
   padding: 0.7vh;
@@ -137,13 +154,14 @@ h2{
   color: blue;
 }
 
-.denuncie:hover{
+.topo:hover{
   background-color: blue;
 }
 
-.denuncie a:hover{
+.topo a:hover{
   color: gray;
 }
+
 /*Configurações do aside (menu lateral esquerdo)*/
 
 .aside a{
@@ -157,11 +175,12 @@ h2{
   font-size: 1rem;
   color: #fff;
   border-radius: 0 15px 15px 0;  
-  text-align: right;   
+  text-align: left;   
 }
 
 
 .aside a:hover{
+  text-align: right;
   left: 0;
   color: white;
 }
@@ -196,9 +215,14 @@ h2{
   background-color: rgb(255, 0, 0);
 }
 
+#conteudo{
+  text-align: left;
+  font-weight: bold;
+}
+
 
 /* Regras para larguras específicas de tela */
-@media screen and (max-width: 1020px) {  /* Breakpoint (ponto de quebra) */
+@media screen and (max-width: 1200px) {  /* Breakpoint (ponto de quebra) */
   .aside{
     display: none;
   }
@@ -206,7 +230,9 @@ h2{
   .topo{
     display: unset;
   }
+}
 
+@media screen and (max-width: 1020px) {  /* Breakpoint (ponto de quebra) */
   .denuncie{
     bottom: 5vh;
   }
@@ -224,5 +250,4 @@ h2{
   .texto1 h3{
     padding-top: 30px;
   }
-
 }
