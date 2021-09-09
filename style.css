@@ -45,7 +45,7 @@ h1{
 }
 
 #contato{
-  height: 100vh;
+  height: 98vh;  
   background-color: rgb(234, 168, 234); 
   color: black;
   padding: 20px 10px 50px 10px;
@@ -223,6 +223,10 @@ h2{
 
 /* Regras para larguras específicas de tela */
 @media screen and (max-width: 1200px) {  /* Breakpoint (ponto de quebra) */
+
+  #contato{
+    height: unset;
+  }
   .aside{
     display: none;
   }
